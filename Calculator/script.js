@@ -64,7 +64,6 @@ function setOP(operand){
     }
 }
 function restValues(){
-    console.log("Values are rested!");
     displayOp.innerHTML = " ";
     firstValue =0;
     secondValue=0;
