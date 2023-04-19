@@ -1,4 +1,5 @@
 var displayDiv = document.querySelector("#display");
+var displayOp = document.querySelector("#opDisplay");
 var firstValue = 0;
 var secondValue =0;
 var operation = " ";
@@ -32,6 +33,7 @@ function setOP(operand){
         case '+':
         firstValue = displayDiv.innerText;
         operation = '+';
+        displayOp.innerText = '+';
         console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
@@ -40,6 +42,7 @@ function setOP(operand){
         case '-':
         firstValue = displayDiv.innerText;
         operation = '-';
+        displayOp.innerText = '-';
         console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
@@ -48,6 +51,7 @@ function setOP(operand){
         case '*':
         firstValue = displayDiv.innerText;
         operation = '*';
+        displayOp.innerText = 'x';
         console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
@@ -56,6 +60,7 @@ function setOP(operand){
         case '/':
         firstValue = displayDiv.innerText;
         operation = '/';
+        displayOp.innerText = '÷';
         console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
@@ -63,6 +68,7 @@ function setOP(operand){
 }
 function restValues(){
     console.log("Values are rested!");
+    displayOp.innerHTML = " ";
     firstValue =0;
     secondValue=0;
     temp =0;
