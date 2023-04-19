@@ -5,6 +5,7 @@ var secondValue =0;
 var operation = " ";
 var equalStatus = true;
 var temp = 0;
+
 function press(value){
 if(equalStatus){
     displayDiv.innerText = value;
@@ -32,36 +33,32 @@ function setOP(operand){
     switch(operand){
         case '+':
         firstValue = displayDiv.innerText;
-        operation = '+';
-        displayOp.innerText = '+';
-        console.log(`First value = ${firstValue} // Opreation = ${operation}`);
+        operation = operand;
+        displayOp.innerText = operand;
         clr();
         break;
 
         
         case '-':
         firstValue = displayDiv.innerText;
-        operation = '-';
-        displayOp.innerText = '-';
-        console.log(`First value = ${firstValue} // Opreation = ${operation}`);
+        operation = operand;
+        displayOp.innerText = operand;
         clr();
         break;
 
         
         case '*':
         firstValue = displayDiv.innerText;
-        operation = '*';
+        operation = operand;
         displayOp.innerText = 'x';
-        console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
 
         
         case '/':
         firstValue = displayDiv.innerText;
-        operation = '/';
+        operation = operand;
         displayOp.innerText = '÷';
-        console.log(`First value = ${firstValue} // Opreation = ${operation}`);
         clr();
         break;
     }
@@ -80,9 +77,6 @@ function calculate(){
         case '+':
         secondValue= displayDiv.innerText;
         temp = parseFloat(firstValue) + parseFloat(secondValue);
-        console.log(`${operation} : ${temp}`);
-        console.log(`parseFloat(firstValue) = ${parseFloat(firstValue)}`);
-
         displayDiv.innerText= temp;
         restValues();
         break;
@@ -91,7 +85,6 @@ function calculate(){
         case '-':
         secondValue= displayDiv.innerText;
         temp = parseFloat(firstValue) - parseFloat(secondValue);
-        console.log(`${operation} : ${temp}`);
         displayDiv.innerText= temp;
         restValues();
         break;
@@ -100,7 +93,6 @@ function calculate(){
         case '*':
         secondValue= displayDiv.innerText;
         temp = parseFloat(firstValue) * parseFloat(secondValue);
-        console.log(`${operation} : ${temp}`);
         displayDiv.innerText= temp;
         restValues();
         break;
@@ -109,7 +101,6 @@ function calculate(){
         case '/':
         secondValue= displayDiv.innerText;
         temp = parseFloat(firstValue) / parseFloat(secondValue);
-        console.log(`${operation} : ${temp}`);
         displayDiv.innerText= temp;
         restValues();
         break;
