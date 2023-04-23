@@ -20,6 +20,7 @@ function render(theDojo) {
   }
   return result;
 }
+
 function zeroArray(theDojo){
   console.log(`Zero Array Funciton is active`);
   for(var i=0; i<theDojo.length; i++) {
@@ -30,7 +31,7 @@ function zeroArray(theDojo){
   return theDojo;
   }
 
-function rArray(){
+function randomArray(){
   var counter =0;
   var xRandom=0;
   var yRandom=0;
@@ -94,6 +95,6 @@ console.log("%c" + "GOOD LUCK THIS IS A CHALLENGE!", style);
 dojoDiv.innerHTML = render(theDojo);  
 
 theDojo= zeroArray(theDojo);  
-rArray();
+randomArray();
 console.table(theDojo);
 
