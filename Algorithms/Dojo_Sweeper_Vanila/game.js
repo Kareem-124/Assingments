@@ -26,29 +26,11 @@ function render(theDojo) {
 //        Use i and j as the indexes to check theDojo.
 function howMany(i, j, element) {
   console.log({i, j});
-  var X_value=i;
-  var Y_value=j;
-  var sum=0;
-  for (i = X_value -1 ; i <= X_value+1; i++){
-    if (i < 0 ) continue;
-    else if(i > 9)break;
-    else
-    for(j = Y_value-1;j <= Y_value+1; j++)
-    {
-        if (j < 0 ) continue;
-        else if(j > 9)break;
-        else{
-        console.log(`The Index Number = [${i}][${j}]`);
-        sum+=theDojo[i][j];
-        }
-    }
-}
-
-  element.innerHTML = sum;
+  alert("TODO - determine how many ninjas are hiding in adjacent squares");
 }
     
 // BONUS CHALLENGES
-// 1. draw the number onto the button instead of alerting it (DONE)
+// 1. draw the number onto the button instead of alerting it
 // 2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
 // 3. if you click on a ninja you must restart the game 
 //    dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`;
@@ -63,4 +45,3 @@ console.table(theDojo);
 // adds the rows of buttons into <div id="the-dojo"></div> 
 dojoDiv.innerHTML = render(theDojo);    
 
-// adding comment to test things in git
