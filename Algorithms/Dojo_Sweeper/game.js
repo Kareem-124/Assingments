@@ -65,3 +65,4 @@ console.table(theDojo);
 // adds the rows of buttons into <div id="the-dojo"></div> 
 dojoDiv.innerHTML = render(theDojo);    
 
+// adding comment to test things in git
